@@ -1,7 +1,7 @@
 # vue-cron
 
-![CocoaPods](https://img.shields.io/npm/dt/vue-cron.svg)
-![CocoaPods](https://img.shields.io/npm/v/vue-cron.svg)
+![CocoaPods](https://img.shields.io/npm/dt/vue-cron-2.svg)
+![CocoaPods](https://img.shields.io/npm/v/vue-cron-2.svg)
 
 这是一个 cron 表达式生成插件,基于 vue 与 element-ui 实现
 [demo](https://1615450788.github.io/vue-cron/dist/index)
@@ -14,7 +14,7 @@
 ## 安装方式
 
 ```
-npm install vue-cron
+npm install vue-cron-2
 ```
 
 ## 引入方式
