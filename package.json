@@ -1,13 +1,11 @@
 {
   "name": "vue-cron-2",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "",
-  "main": "build/cron.min.js",
+  "main": "dist/main.js",
   "scripts": {
-    "dev": "cooking watch -p -c /config/cooking.dev.js",
-    "dist": "cooking build -p -c /config/cooking.dev.js",
-    "build": "cooking build -p -c /config/cooking.build.js",
-    "npm": "npm run build && git add . && git commit -m build&& npm version patch && npm publish && git push && git push origin --tags"
+    "dev": "poi --serve test/index.js",
+    "dist": "cross-env NODE_ENV=production webpack --config webpack.config.js"
   },
   "author": "",
   "repository": {
@@ -25,20 +23,26 @@
     "url": "https://github.com/mennan/vue-cron/issues"
   },
   "dependencies": {
-    "babel-polyfill": "6.26.0",
-    "babel-runtime": "6.26.0",
     "element-ui": "2.0.7",
-    "vue": "2.5.9"
+    "vue": "2.6.10",
+    "vue-loader": "^15.7.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
     "hoek": "5.0.3",
-    "cooking": "1.5.4",
-    "cooking-autoprefixer": "1.0.0",
-    "cooking-cli": "1.5.5",
-    "cooking-less": "1.0.5",
-    "cooking-vue2": "0.3.3",
-    "vue-template-compiler": "2.5.9",
-    "webpack-node-externals": "1.7.2",
-    "json-stringify-safe": "5.0.1"
+    "json-stringify-safe": "5.0.1",
+    "poi": "^12.7.3",
+    "prettier": "^1.19.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-html-loader": "^1.2.4",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
