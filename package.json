@@ -23,9 +23,10 @@
     "url": "https://github.com/mennan/vue-cron/issues"
   },
   "dependencies": {
-    "element-ui": "2.0.7",
+    "bootstrap": "^4.3.1",
     "vue": "2.6.10",
-    "vue-loader": "^15.7.2"
+    "vue-loader": "^15.7.2",
+    "vue-multiselect": "^2.1.6"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -36,8 +37,10 @@
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "hoek": "5.0.3",
+    "jquery": "^3.4.1",
     "json-stringify-safe": "5.0.1",
     "poi": "^12.7.3",
+    "popper.js": "^1.16.0",
     "prettier": "^1.19.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-html-loader": "^1.2.4",
